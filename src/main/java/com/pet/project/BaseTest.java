@@ -13,12 +13,7 @@ public class BaseTest implements ITest {
     protected String testName;
 
     protected TestConfig testConfig = ConfigFactory.create(TestConfig.class, System.getProperties());
-
-    @BeforeSuite
-    public void loadGlobalProperties() {
-        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-    }
-
+    
     @Override
     public String getTestName() {
         return testName;
