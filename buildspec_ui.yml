@@ -6,4 +6,5 @@ phases:
   build:
     commands:
       - echo "Entered build phase"
-      - mvn clean test -Dsuites=ui -Denv.file=sit
+      - mvn clean test -Dsuites=ui -Denv.file=sit -Dselenide.remote=http://3.141.167.95:4444/wd/hub
+
